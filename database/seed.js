@@ -3,7 +3,6 @@ const db = require('./index.js');
 const Product = require('./model.js');
 
 let product1 = new Product ({
-  '_id': 1,
   'product_id': 1,
   'brand': 'Gucci',
   'product_name': 'Tiger Wool Blend Sweater',
@@ -16,7 +15,6 @@ let product1 = new Product ({
 })
 
 let product2 = new Product ({
-  '_id': 2,
   'product_id': 2,
   'brand': 'Spanx',
   'product_name': 'Faux Leather Leggings',
@@ -29,7 +27,6 @@ let product2 = new Product ({
 })
 
 let product3 = new Product ({
-  '_id': 3,
   'product_id': 3,
   'brand': 'Christian Louboutin',
   'product_name': 'Gravitissima Thigh High Boot',
@@ -42,7 +39,6 @@ let product3 = new Product ({
 })
 
 let product4 = new Product ({
-  '_id': 4,
   'product_id': 4,
   'brand': 'Lagos',
   'product_name': 'Diamond Lux Pavé Station Rope Bracelet',
@@ -55,7 +51,6 @@ let product4 = new Product ({
 })
 
 let product5 = new Product ({
-  '_id': 5,
   'product_id': 5,
   'brand': 'Topshop',
   'product_name': 'Luxe Faux Fur Coat',
@@ -71,7 +66,6 @@ let collection = [product1, product2, product3, product4, product5];
 
 let fakeProductGenerator = (productId) => {
   let fakeProduct = {
-    '_id': productId,
     'product_id': productId,
     'brand': faker.company.companyName(),
     'product_name': faker.commerce.productName(),
