@@ -1,17 +1,32 @@
 {
-  "name": "",
-  "version": "",
+  "name": "n3rdstorm",
+  "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "",
-  "engines": {
-    "node": ">=6.13.0"
-  },
-  "scripts": {
-  },
+  "main": "webpack.config.js",
   "dependencies": {
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.4.10",
+    "nodemon": "^1.18.9",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "faker": "^4.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/index.js",
+    "seed": "node database/index.js",
+    "react-dev": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
