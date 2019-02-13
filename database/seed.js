@@ -71,7 +71,7 @@ let fakeProductGenerator = (productId) => {
     'product_name': faker.commerce.productName(),
     'price': faker.commerce.price(),
     'description': faker.lorem.sentences(),
-    'size': ['xs','s', 'm', 'l', 'xl','xxl'],
+    'size': ['Small', 'Medium', 'Large', 'X-Large','XX-Large'],
     'color': [],
     'images': [],
     'quantity': Math.floor(Math.random() * 11)
