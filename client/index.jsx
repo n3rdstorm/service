@@ -53,7 +53,6 @@ class App extends React.Component {
     return (
       <div>
         <Gallery images = {this.state.images} />
-        <MainImage mainImage={this.state.images[0]} />
       </div>
     )
   }

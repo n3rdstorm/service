@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from './Image.jsx';
+import MainImage from './MainImage.jsx';
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Gallery extends React.Component {
             <Image image = {image} key = {i} />
             )}
         </ul>
+        <MainImage mainImage = {this.props.images[0]} />
       </div>
     )
   }
