@@ -13,16 +13,16 @@ class MainImage extends React.Component {
 
   handleClick(event) {
     event.preventDefault();
-    console.log(event.target.value, 'THIS IS AN EVENT')
+    console.log(event.target.value)
     this.setState({currentImage: event.target.value})
   }
 
 
   render() {
     return (
-      <span>
+      <div className='mainImageSize'>
         <img src={this.state.currentImage} onClick={this.handleClick} id='mainImage' />
-      </span>
+      </div>
     )
   }
 }

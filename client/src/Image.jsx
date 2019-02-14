@@ -4,12 +4,15 @@ class Image extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      currentImage: this.props.image
+      currentImage: this.props.image,
+      hover: false
+
     };
-    this.handleClick=this.handleClick.bind(this);
-
+    this.hoverImage = this.hoverImage.bind(this);
   }
-
+  hoverImage() {
+    this.setState({hover: !this.state.hover})
+  }
   handleClick(event) {
     event.preventDefault();
     console.log(event.target.value)
@@ -17,12 +20,19 @@ class Image extends React.Component {
   }
 
   render() {
-    return(
-    <div>
-      <img src={this.props.image} className="galleryImage" onClick={this.handleClick} />
-          {/* <button type='button' id ='modalButton'>X</button> */}
-    </div>
-    )
+    if (this.state.hover) {
+      return (
+        <li className="gallery-li-hover">
+          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} />
+        </li>
+      )
+    } else {
+      return (
+        <li className="gallery-li">
+          <img src={this.props.image} className="galleryImageSize" onMouseEnter={this.hoverImage} />
+        </li>
+      )
+    }
   }
 }
 
