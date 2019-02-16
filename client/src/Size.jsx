@@ -1,5 +1,17 @@
 import React from 'react';
 
+const svgButtonArrow = {
+  focusable: 'false',
+  width: '12px',
+  height: '7px',
+  color: 'black'
+}
+
+const pathButtonArrow = {
+  d: 'path("M6.002 6L1 1m5.002 5L11 1.002")',
+  stroke: '#737373'
+}
+
 class Size extends React.Component {
   constructor(props) {
     super(props);
@@ -23,10 +35,19 @@ class Size extends React.Component {
           <span>{this.props.size.fit}</span>
         </div>
         <div className ='sizeDropdown'>
-          <button onClick={this.openModal}>Size</button>
+          <button id='sizeButton' onClick={this.handleSizeModal}>
+            <div className = 'sizeValue'>
+              Size
+              <span id = 'arrowSpan'>
+                <svg id='buttonArrow' style={svgButtonArrow} >
+                  <path style={pathButtonArrow}></path>
+                </svg>
+              </span>
+            </div>
+          </button>
           <div>
-            <span className = 'sizeList'>
-              <ul className = 'sizeOptions'>
+            <span className = 'sizeTextWhenOpen'>
+              <ul className = 'sizeOptionsModal'>
                 <li>{this.props.size.size[0]}</li>
                 <li>{this.props.size.size[1]}</li>
                 <li>{this.props.size.size[2]}</li>

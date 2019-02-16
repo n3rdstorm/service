@@ -96,7 +96,7 @@
   margin-inline-end: 0px;
 }
 
-.sizeList {
+#sizeButton {
   cursor: pointer;
   position: relative;
   border: 1px solid #e3e3e3;
@@ -104,17 +104,52 @@
   padding: 12px 15px;
   outline: 0;
   display: block;
+  flex: 0 1 auto;
+  text-align: left;
+  font-weight: 700;
 }
 
-.sizeOptions {
+.sizeValue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+#arrowSpan {
+  margin-left: auto;
+}
+
+.buttonArrow {
+  overflow: hidden;
+}
+
+
+.sizeTextWhenOpen {
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  width: 300px;
+  padding: 12px 15px;
+  outline: 0;
+  display: block;
+  flex: 0 1 auto;
+  margin-right: 5px;
+}
+
+
+/* .sizeOptionsModal {
   display: none;
   overflow: auto;
   visibility: visible;
   background: #ffffff;
   /* -webkit-box-shadow: 0 0 5px 1px #e3e3e3; */
-  box-shadow: 0 0 5px 1px #e3e3e3;
+  /* box-shadow: 0 0 5px 1px #e3e3e3;
   z-index: 1;
-}
+  
+}  */
+
+
 /* .modal {
   position: absolute;
   background-color: black;
