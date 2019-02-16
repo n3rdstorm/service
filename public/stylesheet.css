@@ -197,6 +197,7 @@
 }
 
 .addToBagComponentDiv {
+  font-family: 'Mukta', sans-serif;
   display: block;
   width: 300px;
   float:right;
@@ -227,17 +228,18 @@
   background: #000 none!important;
   border-color: #000;
   color: #fff!important;
-  font-weight: 400;
-  font-size: 1.5rem;
   height: 50px;
   width: 300px;
   display: block;
   cursor: pointer;
+  font-family: 'Mukta', sans-serif;
+  font-size: .9rem;
+  margin-bottom: 12px;
 }
 
-.wishListDiv {
+/* .wishListDiv {
   margin-top: 12px;
-}
+} */
 
 #wishListText {
   background-position: bottom;
@@ -245,6 +247,34 @@
   background-size: 100% 1px;
   border-bottom: 1px solid transparent;
   cursor: pointer;
+  font-family: 'Mukta', sans-serif;
+  color:#393939;
+  font-size: .9rem;
+  text-decoration: underline;
+}
+
+.buyPickUpDiv {
+  position: relative;
+  margin-top: 20px;
+  display: block;
+}
+
+#buyPickUpPara {
+  font-family: 'Mukta', sans-serif;
+  color:#393939;
+  font-size: 12px;
+  line-height: 1.38;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+#checkAvailPara {
+  width: 100%;
+  margin: 5px 0 15px;
+  font-family: 'Mukta', sans-serif;
+  color:#393939;
+  font-size: 15px;
+  font-weight: 350;
 }
 
 #zipAndLocationDiv {
@@ -258,14 +288,17 @@
   height: 40px;
   max-width: 130px;
   padding: 0 14px;
+  font-family: 'Mukta', sans-serif;
+  color:#bbb;
+  font-size: 15px;
+  font-weight: 350;
 }
 
 #checkLocation {
   background: #000 none!important;
   border-color: #000;
   color: #fff!important;
-  font-weight: 400;
-  font-size: 1.5rem;
+  /* font-weight: 350; */
   height: 50px;
   width: 300px;
   display: block;
@@ -276,6 +309,8 @@
   text-align: center;
   text-decoration: none;
   margin: 0 0 0 10px!important;
+  font-family: 'Mukta', sans-serif;
+  font-size: .9rem;
 }
 /* .gallery-li-hover {
   display: block;

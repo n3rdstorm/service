@@ -20,11 +20,13 @@ class AddToBag extends React.Component {
         <div clasName = 'wishListDiv'>
           <span id = 'wishListText'>Add to Wish List</span>
         </div>
-        <p>Buy & Pick Up</p>
-        <p>Check availability within 100 miles of:</p>
-        <div id = 'zipAndLocationDiv'>
-          <input id = 'zipCode' type='text' placeholder = 'Zip code'/>
-          <button id = 'checkLocation'>Check Location</button>
+        <div className = 'buyPickUpDiv'>
+          <p id ='buyPickUpPara'>Buy & Pick Up</p>
+          <p id= 'checkAvailPara'>Check availability within 100 miles of:</p>
+            <div id = 'zipAndLocationDiv'>
+              <input id = 'zipCode' type='text' placeholder = 'Zip code'/>
+              <button id = 'checkLocation'>Check Location</button>
+            </div>
         </div>
       </div>
     )
