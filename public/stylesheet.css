@@ -199,6 +199,7 @@
 .addToBagComponentDiv {
   display: block;
   width: 300px;
+  float:right;
 }
 .quantity {
   position: relative;
@@ -231,6 +232,7 @@
   height: 50px;
   width: 300px;
   display: block;
+  cursor: pointer;
 }
 
 .wishListDiv {
@@ -243,6 +245,37 @@
   background-size: 100% 1px;
   border-bottom: 1px solid transparent;
   cursor: pointer;
+}
+
+#zipAndLocationDiv {
+  width: 300px;
+  display: flex;
+}
+
+#zipCode {
+  box-sizing: border-box;
+  flex: 0 0 130px;
+  height: 40px;
+  max-width: 130px;
+  padding: 0 14px;
+}
+
+#checkLocation {
+  background: #000 none!important;
+  border-color: #000;
+  color: #fff!important;
+  font-weight: 400;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 300px;
+  display: block;
+  cursor: pointer;
+  align-items: center;
+  outline: none;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0 0 10px!important;
 }
 /* .gallery-li-hover {
   display: block;

@@ -22,8 +22,10 @@ class AddToBag extends React.Component {
         </div>
         <p>Buy & Pick Up</p>
         <p>Check availability within 100 miles of:</p>
-        <input id = 'zipCode' type='text' placeholder = 'Zip code'/>
-        <button id = 'checkLocation'>Check Location</button>
+        <div id = 'zipAndLocationDiv'>
+          <input id = 'zipCode' type='text' placeholder = 'Zip code'/>
+          <button id = 'checkLocation'>Check Location</button>
+        </div>
       </div>
     )
   }
