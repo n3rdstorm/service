@@ -4,6 +4,7 @@ import $ from 'jquery';
 import Gallery from './src/Gallery.jsx';
 import Description from './src/Description.jsx';
 import Size from './src/Size.jsx';
+import AddToBag from './src/AddToBag.jsx';
 
 
 class App extends React.Component {
@@ -17,7 +18,8 @@ class App extends React.Component {
       description: 'Wild style is refined for the contemporary gent on an intricate jacquard-knit wool-blend sweater featuring a bold, fierce tiger face in front.',
       fit: 'True to size.',
       size: ['Small', 'Medium', 'Large', 'X-Large','XX-Large'],
-      color: ['Black Gold'],
+      color: [{color: 'Black Gold', icon: 'https://n.nordstrommedia.com/id/46f2ee7e-feb0-4cc3-b7cb-e6f47df810c5.jpeg?crop=fit&amp;w=31&amp;h=31'}],
+      quantity: 1
       // isModalOpen: false,
     };
   }
@@ -56,6 +58,7 @@ class App extends React.Component {
         <Gallery images = {this.state.images} />
         <Description description = {this.state} />
         <Size size = {this.state} />
+        <AddToBag quantity = {this.state.quantity} />
       </div>
     )
   }

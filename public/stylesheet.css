@@ -78,7 +78,7 @@
   height: 50%;
 }
 
-.description {
+.descriptionSection {
   display: block;
   float: left;
   width: 300px;
@@ -94,6 +94,35 @@
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+#price {
+  font-weight: 700;
+  font-size: 15px;
+}
+#freeShipping {
+  /* float: right; */
+  display: inline-block;
+    margin-left: 30px;
+    font-size: 1.3rem;
+}
+
+#description {
+  color: #393939;
+  display: block;
+  margin-top: 30px;
+}
+
+.fit {
+  /* margin-top: 40px; */
+  /* position: relative;
+  display: block; */
+  width: 100%;
+  margin: 0 0 5px;
+}
+
+#fitLabel {
+  margin-right: 5px;
+  font-weight: 700;
 }
 
 #sizeButton {
@@ -124,7 +153,6 @@
   overflow: hidden;
 }
 
-
 .sizeTextWhenOpen {
   cursor: pointer;
   position: relative;
@@ -137,17 +165,89 @@
   margin-right: 5px;
 }
 
+.sizeOptionsMenu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: block;
+  list-style-type: disc;
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  /* padding-inline-start: 40px; */
+  width: 300px;
+  /* float: right; */
+}
 
-/* .sizeOptionsModal {
-  display: none;
-  overflow: auto;
-  visibility: visible;
-  background: #ffffff;
-  /* -webkit-box-shadow: 0 0 5px 1px #e3e3e3; */
-  /* box-shadow: 0 0 5px 1px #e3e3e3;
-  z-index: 1;
-  
-}  */
+.optionListItem {
+  outline: 0;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  height: 65px;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0 15px;
+  display: list-item;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.quantity {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#quantityField {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  text-align: center;
+  outline-offset: -2px;
+  outline: 2px solid transparent;
+  border: 1px solid #bbb;
+}
+/* .gallery-li-hover {
+  display: block;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.gallery-li::after {
+  display: block;
+  border-bottom: 3px solid white;
+  position: relative;
+  left: 0px;
+  z-index: 2;
+  content: "";
+  width: 60px;
+  height: 3px;
+}
+
+.gallery-li-hover::after {
+  display: block;
+  border-bottom: 3px solid gray;
+  position: relative;
+  left: 0px;
+  z-index: 2;
+  content: "";
+  width: 60px;
+  height: 3px;
+} */
+
+
+
+
+
+
+
 
 
 /* .modal {

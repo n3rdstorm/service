@@ -16,7 +16,8 @@ class Size extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      isModalOpen: false
+      isModalOpen: false,
+      hover: false
     };
     this.handleSizeModal = this.handleSizeModal.bind(this);
   }
@@ -31,8 +32,8 @@ class Size extends React.Component {
     return (
       <div className = 'sizeSection'>
         <div className = 'fit'>
-          <span>Fit</span>
-          <span>{this.props.size.fit}</span>
+          <span id = 'fitLabel'>Fit</span>
+          <span id = 'fitTip'>{this.props.size.fit}</span>
         </div>
         <div className ='sizeDropdown'>
           <button id='sizeButton' onClick={this.handleSizeModal}>
@@ -47,12 +48,12 @@ class Size extends React.Component {
           </button>
           <div>
             <span className = 'sizeTextWhenOpen'>
-              <ul className = 'sizeOptionsModal'>
-                <li>{this.props.size.size[0]}</li>
-                <li>{this.props.size.size[1]}</li>
-                <li>{this.props.size.size[2]}</li>
-                <li>{this.props.size.size[3]}</li>
-                <li>{this.props.size.size[4]}</li>
+              <ul className = 'sizeOptionsMenu'>
+                <li className = 'optionListItem'>{this.props.size.size[0]}</li>
+                <li className = 'optionListItem'>{this.props.size.size[1]}</li>
+                <li className = 'optionListItem'>{this.props.size.size[2]}</li>
+                <li className = 'optionListItem'>{this.props.size.size[3]}</li>
+                <li className = 'optionListItem'>{this.props.size.size[4]}</li>
               </ul>
             </span>
           </div>

@@ -7,14 +7,19 @@ class Description extends React.Component {
   }
   render() {
     return (
-      <div className='description'>
+      <div className='descriptionSection'>
         <h1 id='itemName'>{this.props.description.itemName}</h1>
         <h2>{this.props.description.brand}</h2>
         <section>
-          <span>{this.props.description.price}</span>
-          <span>Free Shipping</span>
+          <span>
+            <span id = 'price'>{this.props.description.price}</span>
+            <span id = 'freeShipping'>Free Shipping</span>
+          </span>
         </section>
-        <div>{this.props.description.description}</div>
+        <div id = 'description'>{this.props.description.description}</div>
+        <div className = 'color'>
+          <div id = 'colorIcon'>{this.props.description.color.icon}</div>
+        </div>
       </div>
     )
   }
