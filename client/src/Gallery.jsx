@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './Image.jsx';
 import MainImage from './MainImage.jsx';
+import Description from './Description.jsx';
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -8,10 +9,9 @@ class Gallery extends React.Component {
     this.state = {};
   }
 
-
   render() {
     return (
-      <div>
+      <div className ='imageSection'>
         <ul id = 'mainDiv'>
           {this.props.images.map((image, i) => 
             <Image image = {image} key = {i} />

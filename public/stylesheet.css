@@ -1,16 +1,11 @@
-#mainDiv {
-  float: left
+.topSection {
+  max-width: 80%;
+  height: auto;
 }
 
-.mainImageSize {
-  margin: 0 20%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: relative;
-  max-width: 25%;
-  height: 50%;
+.imageSection {
+  float: left;
+  width: calc(100% - 300px);
 }
 
 .galleryImageSize {
@@ -68,6 +63,58 @@
   cursor: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHhtbDpzcGFjZT0icHJlc2VydmUiIGhlaWdodD0iNDEiIHdpZHRoPSI0MSI+PHN0eWxlPi5zdDF7ZmlsbDpub25lO3N0cm9rZTojMzkzOTM5O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMH08L3N0eWxlPjxjaXJjbGUgY3g9IjIwLjUiIGN5PSIyMC41IiByPSIyMCIgb3BhY2l0eT0iLjgiIGZpbGw9IiNmZmYiLz48ZyBpZD0iX3gzQ19Hcm91cF94M0VfXzdfIj48cGF0aCB0cmFuc2Zvcm09InJvdGF0ZSgtNDQuOTg0IDI2Ljc1IDI2Ljc1KSIgY2xhc3M9InN0MSIgZD0iTTI1LjUgMjNoMi40djcuNWgtMi40eiIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yMy44IDIzLjhsLTEtMSIvPjxjaXJjbGUgY2xhc3M9InN0MSIgY3g9IjE3LjgiIGN5PSIxNy44IiByPSI3Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTE0LjIgMTcuOGg3TTE3LjggMTQuMnY3Ii8+PC9nPjwvc3ZnPg==) 20 20,pointer!important;
 }
 
+#mainDiv {
+  float: left
+}
+
+.mainImageSize {
+  margin: 0 20%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  max-width: 25%;
+  height: 50%;
+}
+
+.description {
+  display: block;
+  float: left;
+  width: 300px;
+}
+
+#itemName {
+  font-family: arial;
+  font-size: 12px;
+  /* margin: 0; */
+  display: block;
+  /* font-size: 2em; */
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.sizeList {
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  width: 300px;
+  padding: 12px 15px;
+  outline: 0;
+  display: block;
+}
+
+.sizeOptions {
+  display: none;
+  overflow: auto;
+  visibility: visible;
+  background: #ffffff;
+  /* -webkit-box-shadow: 0 0 5px 1px #e3e3e3; */
+  box-shadow: 0 0 5px 1px #e3e3e3;
+  z-index: 1;
+}
 /* .modal {
   position: absolute;
   background-color: black;
