@@ -10,8 +10,20 @@ class AddToBag extends React.Component {
   }
   render() {
     return (
-      <div className = 'quantity'>
-        <input id = 'quantityField' type='text' placeholder='1'/>
+      <div className = 'addToBagComponentDiv'>
+        <div className = 'quantity'>
+          <input id = 'quantityField' type='text' placeholder='1'/>
+        </div>
+        <div className = 'addToBagButtonDiv'>
+          <button className = 'addToBagButton'>Add to Bag</button>
+        </div>
+        <div clasName = 'wishListDiv'>
+          <span id = 'wishListText'>Add to Wish List</span>
+        </div>
+        <p>Buy & Pick Up</p>
+        <p>Check availability within 100 miles of:</p>
+        <input id = 'zipCode' type='text' placeholder = 'Zip code'/>
+        <button id = 'checkLocation'>Check Location</button>
       </div>
     )
   }

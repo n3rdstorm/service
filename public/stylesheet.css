@@ -196,6 +196,10 @@
   /* width: 100%; */
 }
 
+.addToBagComponentDiv {
+  display: block;
+  width: 300px;
+}
 .quantity {
   position: relative;
   margin-top: 30px;
@@ -212,6 +216,33 @@
   outline-offset: -2px;
   outline: 2px solid transparent;
   border: 1px solid #bbb;
+}
+
+.addToBagButtonDiv {
+  margin-top: 40px;
+}
+
+.addToBagButton {
+  background: #000 none!important;
+  border-color: #000;
+  color: #fff!important;
+  font-weight: 400;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 300px;
+  display: block;
+}
+
+.wishListDiv {
+  margin-top: 12px;
+}
+
+#wishListText {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
 /* .gallery-li-hover {
   display: block;
