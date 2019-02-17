@@ -78,15 +78,13 @@
   height: 50%;
 }
 
-.descriptionSection {
+.description {
   display: block;
   float: left;
   width: 300px;
 }
 
 #itemName {
-  font-family: arial;
-  font-size: 12px;
   /* margin: 0; */
   display: block;
   /* font-size: 2em; */
@@ -94,35 +92,96 @@
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-}
-#price {
-  font-weight: 700;
-  font-size: 15px;
-}
-#freeShipping {
-  /* float: right; */
-  display: inline-block;
-    margin-left: 30px;
-    font-size: 1.3rem;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 350;
+  color: #393939;
 }
 
-#description {
+#brand {
+  font-family: 'Mukta', sans-serif;
+  font-size: .9rem;
+  font-weight: 350;
   color: #393939;
+  text-decoration: underline;
+}
+
+#price {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #393939;
+  text-decoration: bold;
+}
+
+#freeShipping {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: .8rem;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+  color: #393939;
+}
+
+#descriptionText{
   display: block;
+  font-size: .9rem;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 350;
+  color: #393939;
   margin-top: 30px;
+  line-height: 1.4;
+  letter-spacing: .2px;
+  margin-bottom: 40px;
+}
+
+.sizeSection {
+  position: relative;
+  display: block;
+  z-index: -1000;
 }
 
 .fit {
-  /* margin-top: 40px; */
-  /* position: relative;
-  display: block; */
   width: 100%;
   margin: 0 0 5px;
+  display: block;
 }
 
-#fitLabel {
+#fitText {
   margin-right: 5px;
   font-weight: 700;
+  color: #393939;
+  font-size: .9rem;
+  font-family: 'Mukta', sans-serif;
+}
+
+#fitTip {
+  color: #393939;
+  font-size: .9rem;
+  font-family: 'Mukta', sans-serif;
+  letter-spacing: .2px;
+}
+
+#colorIconBorder {
+  position: relative;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #393939!important;
+  display: block;
+  /* ADDED BELOW */
+  height: 31px; 
+  width: 31px;
+}
+
+/* CHANGED SELECTION */
+img#colorIcon {
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  border: 0;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 #sizeButton {

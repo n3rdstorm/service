@@ -32,7 +32,7 @@ class Size extends React.Component {
     return (
       <div className = 'sizeSection'>
         <div className = 'fit'>
-          <span id = 'fitLabel'>Fit</span>
+          <span id = 'fitText'>Fit</span>
           <span id = 'fitTip'>{this.props.size.fit}</span>
         </div>
         <div className ='sizeDropdown'>

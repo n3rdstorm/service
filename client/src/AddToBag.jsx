@@ -17,7 +17,7 @@ class AddToBag extends React.Component {
         <div className = 'addToBagButtonDiv'>
           <button className = 'addToBagButton'>Add to Bag</button>
         </div>
-        <div clasName = 'wishListDiv'>
+        <div className = 'wishListDiv'>
           <span id = 'wishListText'>Add to Wish List</span>
         </div>
         <div className = 'buyPickUpDiv'>

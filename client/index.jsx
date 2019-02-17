@@ -4,6 +4,7 @@ import $ from 'jquery';
 import Gallery from './src/Gallery.jsx';
 import Description from './src/Description.jsx';
 import Size from './src/Size.jsx';
+import Colors from './src/Colors.jsx';
 import AddToBag from './src/AddToBag.jsx';
 
 
@@ -58,6 +59,7 @@ class App extends React.Component {
         <Gallery images = {this.state.images} />
         <Description description = {this.state} />
         <Size size = {this.state} />
+        <Colors colors = {this.state} />
         <AddToBag quantity = {this.state.quantity} />
       </div>
     )
