@@ -162,6 +162,15 @@
   letter-spacing: .2px;
 }
 
+.colors {
+  float: left;
+  margin-left: 2px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 #colorIconBorder {
   position: relative;
   border: 3px solid #fff;
@@ -169,12 +178,10 @@
   cursor: pointer;
   box-shadow: 0 0 0 2px #393939!important;
   display: block;
-  /* ADDED BELOW */
   height: 31px; 
   width: 31px;
 }
 
-/* CHANGED SELECTION */
 img#colorIcon {
   border-radius: 50%;
   height: 31px;
@@ -182,6 +189,14 @@ img#colorIcon {
   border: 0;
   vertical-align: middle;
   cursor: pointer;
+}
+.colorName {
+  margin: 0 0 0 15px;
+  flex: 0 1 auto;
+  color: #393939;
+  font-size: .9rem;
+  font-family: 'Mukta', sans-serif;
+
 }
 
 #sizeButton {

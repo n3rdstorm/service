@@ -48,13 +48,13 @@ class Size extends React.Component {
           </button>
           <div>
             <span className = 'sizeTextWhenOpen'>
-              <ul className = 'sizeOptionsMenu'>
+              {/* <ul className = 'sizeOptionsMenu'>
                 <li className = 'optionListItem'>{this.props.size.size[0]}</li>
                 <li className = 'optionListItem'>{this.props.size.size[1]}</li>
                 <li className = 'optionListItem'>{this.props.size.size[2]}</li>
                 <li className = 'optionListItem'>{this.props.size.size[3]}</li>
                 <li className = 'optionListItem'>{this.props.size.size[4]}</li>
-              </ul>
+              </ul> */}
             </span>
           </div>
         </div>

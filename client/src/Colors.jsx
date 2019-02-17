@@ -8,10 +8,11 @@ class Colors extends React.Component {
 
   render() {
     return (
-      <div className = 'color'>
+      <div className = 'colors'>
           <div id = 'colorIconBorder'>
             <img id = 'colorIcon' src = {this.props.colors.color[0].icon} />
           </div>
+          <span className = 'colorName'>{this.props.colors.color[0].color}</span>
         </div>
     )
   }
