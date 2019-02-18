@@ -212,12 +212,16 @@ img#colorIcon {
   list-style-type: disc;
 }
 
-.size-li {
+.eachSizeDiv {
+  display: block;
+  position: relative;
+}
+
+.eachSize {
   outline: 0;
   list-style-type: none;
   cursor: pointer;
   height: 65px;
-  border-bottom: 1px solid #e3e3e3;
   padding: 0 15px;
   display: list-item;
   display: flex;
@@ -227,36 +231,24 @@ img#colorIcon {
 }
 
 .sizeHover {
-  outline: 0;
-  list-style-type: none;
-  cursor: pointer;
-  height: 65px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: lightgray;
   border-bottom: 1px solid #e3e3e3;
-  /* border-bottom: 3px solid gray; */
-  /* z-index: 2; */
-  padding: 0 15px;
-  display: list-item;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 13px;
-}
-/* 
-.sizeHover::after {
-  display: block;
-  border-bottom: 3px solid gray;
-  position: relative;
-  z-index: 2;
-  content: "";
 }
 
-.size-li::after {
-  display: block;
-  border-bottom: 3px solid gray;
-  position: relative;
-  z-index: 2;
-  content: "";
-} */
+.noSizeHover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e3e3e3;
+}
 
 .sizesClosed {
   z-index: -1000;

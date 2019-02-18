@@ -16,11 +16,17 @@ class Size extends React.Component {
   render() {
     if (this.state.sizeHover) {
       return (
-        <li className='sizeHover' onMouseLeave={this.hoverSize}>{this.props.size}</li>
+        <div className="eachSizeDiv">
+          <li className='eachSize' onMouseLeave={this.hoverSize}>{this.props.size}</li>
+          <span className='sizeHover'></span>
+        </div>
       )
     } else {
       return (
-        <li className='size-li' onMouseEnter={this.hoverSize}>{this.props.size}</li>
+        <div className="eachSizeDiv">
+          <li className='eachSize' onMouseEnter={this.hoverSize}>{this.props.size}</li>
+          <span className='noSizeHover'></span>
+        </div>
       )
     }
   }
