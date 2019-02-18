@@ -29,6 +29,9 @@ const Fit = (props) => {
           </span>
         </div>
       </button>
+      <aside className = 'sizeGuide'>
+        <span className ='sizeGuideSpan'>Size guides</span>
+      </aside>
     </div>
   )
 }

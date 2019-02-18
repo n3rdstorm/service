@@ -24,9 +24,6 @@ class Size extends React.Component {
     } else {
       return (
         <div className="eachSizeDiv">
-        {/* <div>
-          <span>Size guides</span>
-        </div> */}
           <li className='eachSize' onMouseEnter={this.hoverSize}>{this.props.size}</li>
           <span className='noSizeHover'></span>
         </div>

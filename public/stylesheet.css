@@ -145,6 +145,20 @@
   letter-spacing: .2px;
 }
 
+.sizeGuide {
+  cursor: pointer;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.sizeGuideSpan {
+  font-size: 13px;
+  text-decoration: underline;
+}
 .colors {
   margin-left: 2px;
   margin-bottom: 15px;
