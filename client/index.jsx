@@ -6,6 +6,7 @@ import Description from './src/Description.jsx';
 import Size from './src/Size.jsx';
 import Colors from './src/Colors.jsx';
 import AddToBag from './src/AddToBag.jsx';
+import RightSideComponent from './src/RightSideComponent.jsx';
 
 
 class App extends React.Component {
@@ -57,10 +58,7 @@ class App extends React.Component {
     return (
       <div className='topSection'>
         <Gallery images = {this.state.images} />
-        <Description description = {this.state} />
-        <Size size = {this.state} />
-        <Colors colors = {this.state} />
-        <AddToBag quantity = {this.state.quantity} />
+        <RightSideComponent data = {this.state}/> 
       </div>
     )
   }
