@@ -4,7 +4,8 @@ class MainImage extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      currentImage: props.mainImage
+      currentImage: props.mainImage,
+      zoom: true;
     };
 
     // this.handleClick=this.handleClick.bind(this);
@@ -21,11 +22,13 @@ class MainImage extends React.Component {
   render() {
     return (
       <div>
-        <div className='mainImageSize'>
-          <img src={this.state.currentImage} id='mainImage' />
+        <div className='mainImageContainer'>
+          {/* <div id='mainImage' > */}
+            <img src={this.state.currentImage} id='mainImage'/>
+          {/* </div> */}
         </div>
-        <div className = 'zoom'>
-        </div>
+        {/* <div className = 'zoom'>
+        </div> */}
       </div>
     )
   }
