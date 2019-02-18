@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from './Image.jsx';
+import GalleryImage from './GalleryImage.jsx';
 import MainImage from './MainImage.jsx';
 
 class Gallery extends React.Component {
@@ -11,11 +11,13 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className ='imageSection'>
-        <ul id = 'mainDiv'>
-          {this.props.images.map((image, i) => 
-            <Image image = {image} key = {i} />
-          )}
-        </ul>
+        <div className = 'galleryDiv'>
+          <ul>
+            {this.props.images.map((image, i) => 
+              <GalleryImage image = {image} key = {i} />
+              )}
+          </ul>
+        </div>
         <MainImage mainImage = {this.props.images[0]} />
       </div>
     )

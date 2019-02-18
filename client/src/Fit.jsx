@@ -49,7 +49,7 @@ class Fit extends React.Component {
         <aside className = 'sizeGuide'>
           <span className ='sizeGuideSpan'>Size guides</span>
         </aside>
-        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen}/>
+        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen} close={this.handleSize}/>
       </div>
     )
   }

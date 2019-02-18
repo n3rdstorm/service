@@ -23,20 +23,9 @@ class App extends React.Component {
       size: ['Small', 'Medium', 'Large', 'X-Large','XX-Large'],
       color: [{color: 'Black Gold', icon: 'https://n.nordstrommedia.com/id/46f2ee7e-feb0-4cc3-b7cb-e6f47df810c5.jpeg?crop=fit&amp;w=31&amp;h=31'}],
       quantity: 1
-      // isModalOpen: false,
     };
   }
-  // changeCurrentImage() {
-
-  // }
-  // openModal() {
-  //   this.setState=({isModalOpen: true})
-  // }
-
-  // closeModal() {
-  //   this.setState=({isModalOpen: false})
-  // }
-
+ 
   componentDidMount() {
     let id = window.location.pathname.split('/');
     id = id[id.length-1];

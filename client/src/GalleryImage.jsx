@@ -1,29 +1,30 @@
 import React from 'react';
 
-class Image extends React.Component {
+class GalleryImage extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      currentImage: this.props.image,
+      currentImage: this.props.mainImage,
       hover: false
 
     };
     this.hoverImage = this.hoverImage.bind(this);
+    this.changeImage = this.changeImage.bind(this);
   }
   hoverImage() {
     this.setState({hover: !this.state.hover})
   }
-  handleClick(event) {
+  changeImage(event) {
     event.preventDefault();
-    console.log(event.target.value)
-    this.setState({currentImage: event.target.value})
+    console.log(event.target)
+    this.setState({currentImage: this.props.image})
   }
 
   render() {
     if (this.state.hover) {
       return (
         <li className="gallery-li-hover">
-          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} />
+          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} onClick={this.changeImage} />
         </li>
       )
     } else {
@@ -33,7 +34,8 @@ class Image extends React.Component {
         </li>
       )
     }
+    <MainImage mainImage = {this.props.image} />
   }
 }
 
-export default Image;
+export default GalleryImage;
