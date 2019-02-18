@@ -183,6 +183,12 @@ img#colorIcon {
   box-shadow: 0 0 5px 1px #e3e3e3;
 }
 
+.sizesClosed {
+  overflow: auto;
+  visibility: visible;
+  background: #fff;
+}
+
 .sizesOpenHeaderWrapper {
   display: flex;
   flex-direction: column;
@@ -262,6 +268,7 @@ img#colorIcon {
   flex: 0 1 auto;
   text-align: left;
   font-weight: 700;
+  width: 300px;
 }
 
 .sizeValue {

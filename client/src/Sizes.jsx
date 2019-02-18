@@ -1,28 +1,14 @@
 import React from 'react';
 import Size from './Size.jsx';
 
-const svgButtonArrow = {
-  focusable: 'false',
-  width: '12px',
-  height: '7px',
-  color: 'black'
-}
-
-const pathButtonArrow = {
-  d: 'path("M6.002 6L1 1m5.002 5L11 1.002")',
-  stroke: '#737373'
-}
-
 class Sizes extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      isSizesOpen: true,
-      hover: false
+      isSizesOpen: false
     };
     this.handleSizeModal = this.handleSizeModal.bind(this);
   }
-
 
   handleSizeModal() {
     console.log('OPEN MODAL');
@@ -30,7 +16,7 @@ class Sizes extends React.Component {
   }
 
   render() {
-    // if (this.isSizesOpen) {
+    if (this.state.isSizesOpen) {
       return (
         <div className = 'sizesOpen'>
           <div className = 'sizesOpenHeaderWrapper'>
@@ -44,28 +30,11 @@ class Sizes extends React.Component {
           </ul>
         </div>
       )
-    // } else {
-    //   return (
-    //     <div className = 'sizeClosed'>
-    //       <div className = 'fit'>
-    //         <span id = 'fitText'>Fit</span>
-    //         <span id = 'fitTip'>{this.props.size.fit}</span>
-    //       </div>
-    //       <div className ='sizeDropdown'>
-    //         <button id='sizeButton' onClick={this.handleSizeModal}>
-    //           <div className = 'sizeValue'>
-    //             Size
-    //             <span id = 'arrowSpan'>
-    //               <svg id='buttonArrow' style={svgButtonArrow} >
-    //                 <path style={pathButtonArrow}></path>
-    //               </svg>
-    //             </span>
-    //           </div>
-    //         </button>
-    //       </div>
-    //     </div>
-    //   )
-    // }
+    } else if (!this.state.isSizesOpen) {
+      return (
+        <div className = 'sizesClosed'></div>
+      )
+    } 
   }
 }
 export default Sizes;
