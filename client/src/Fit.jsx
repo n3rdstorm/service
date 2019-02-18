@@ -1,4 +1,5 @@
 import React from 'react';
+import Sizes from './Sizes.jsx';
 
 const svgButtonArrow = {
   focusable: 'false',
@@ -12,28 +13,46 @@ const pathButtonArrow = {
   stroke: '#737373'
 }
 
-const Fit = (props) => {
-  return (
-    <div>
-      <div className = 'fit'>
-        <span id = 'fitText'>Fit</span>
-        <span id = 'fitTip'>{props.fit.fit}</span> {/*what is props.fit */}
-      </div>
-      <button id='sizeButton'>
-        <div className = 'sizeValue'>
-          Size
-          <span id = 'arrowSpan'>
-            <svg id='buttonArrow' style={svgButtonArrow} >
-              <path style={pathButtonArrow}></path>
-            </svg>
-          </span>
+
+class Fit extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isSizesOpen: false
+    };
+    this.handleSize = this.handleSize.bind(this);
+  }
+
+  handleSize() {
+    this.setState({
+      isSizesOpen: !this.state.isSizesOpen
+    });
+  }
+
+  render() {
+    return (
+      <div className = 'mainFitDiv'>
+        <div className = 'fit'>
+          <span id = 'fitText'>Fit</span>
+          <span id = 'fitTip'>{this.props.fit.fit}</span>
         </div>
-      </button>
-      <aside className = 'sizeGuide'>
-        <span className ='sizeGuideSpan'>Size guides</span>
-      </aside>
-    </div>
-  )
+        <button id='sizeButton' onClick={this.handleSize}>
+          <div className = 'sizeValue'>
+            Size
+            <span id = 'arrowSpan'>
+              <svg id='buttonArrow' style={svgButtonArrow} >
+                <path style={pathButtonArrow}></path>
+              </svg>
+            </span>
+          </div>
+        </button>
+        <aside className = 'sizeGuide'>
+          <span className ='sizeGuideSpan'>Size guides</span>
+        </aside>
+        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen}/>
+      </div>
+    )
+  }
 }
 
 export default Fit;

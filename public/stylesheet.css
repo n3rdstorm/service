@@ -129,6 +129,11 @@
   margin-bottom: 40px;
 }
 
+.mainFitDiv {
+  display: block;
+  position: relative;
+}
+
 .fit {
   width: 100%;
   margin: 0 0 5px;
@@ -159,38 +164,21 @@
   font-size: 13px;
   text-decoration: underline;
 }
-.colors {
-  margin-left: 2px;
-  margin-bottom: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
-#colorIconBorder {
-  border: 3px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 0 2px #393939!important;
-  height: 31px; 
-  width: 31px;
-}
-
-img#colorIcon {
-  border-radius: 50%;
-  height: 31px;
-  width: 31px;
-  border: 0;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.colorName {
-  margin: 0 0 0 15px;
-  flex: 0 1 auto;
-  font-size: .9rem;
+.sizeOptionsMenu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-type: disc;
 }
 
 .sizesOpen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: #fff; 
   overflow: auto;
   visibility: visible;
   background: #fff;
@@ -198,8 +186,14 @@ img#colorIcon {
 }
 
 .sizesClosed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: #fff; 
   overflow: auto;
-  visibility: visible;
+  visibility: hidden;
   background: #fff;
 }
 
@@ -224,14 +218,6 @@ img#colorIcon {
   flex: 0 1 a 5px;
   font-size: 13px;
 }
-
-.sizeOptionsMenu {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  list-style-type: disc;
-}
-
 .eachSizeDiv {
   display: block;
   position: relative;
@@ -270,10 +256,6 @@ img#colorIcon {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.sizesClosed {
-  z-index: -1000;
-}
-
 #sizeButton {
   cursor: pointer;
   border: 1px solid #e3e3e3;
@@ -300,7 +282,36 @@ img#colorIcon {
   overflow: hidden;
 }
 
+.colors {
+  margin-left: 2px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+#colorIconBorder {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #393939!important;
+  height: 31px; 
+  width: 31px;
+}
+
+img#colorIcon {
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  border: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.colorName {
+  margin: 0 0 0 15px;
+  flex: 0 1 auto;
+  font-size: .9rem;
+}
 .addToBagComponentDiv {
   font-family: 'Mukta', sans-serif;
   float:right;

@@ -10,7 +10,6 @@ const RightSideComponent = (props) => (
   <div className = 'rightSideComponent'>
     <Description description = {props.data} />
     <Fit fit = {props.data} />
-    <Sizes sizes = {props.data} />
     <Colors colors = {props.data} />
     <AddToBag quantity = {props.data.quantity} />
   </div>
