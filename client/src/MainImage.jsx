@@ -8,14 +8,12 @@ class MainImage extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      currentImage: props.mainImage,
       zoom: false
     };
     this.zoomIn = this.zoomIn.bind(this);
   }
 
   zoomIn() {
-    console.log('zoom');
     this.setState({zoom: !this.state.zoom})
   }
 
@@ -23,7 +21,7 @@ class MainImage extends React.Component {
     if (this.state.zoom) {
       return (
         <div className = 'zoomInWrapper' onClick={this.zoomIn}>
-          <img src={this.state.currentImage} className ='zoomMainImage'/>
+          <img src={this.props.mainImage} className ='zoomMainImage'/>
           <div className ='exit'>
             <svg focusable="false" height="24" width="24" class='exitIconPosition'>
               <g>
@@ -38,12 +36,8 @@ class MainImage extends React.Component {
       return (
         <div>
           <div className='mainImageContainer'>
-            {/* <div id='mainImage' > */}
-              <img src={this.state.currentImage} id='mainImage' onClick={this.zoomIn}/>
-            {/* </div> */}
+              <img src={this.props.mainImage} id='mainImage' onClick={this.zoomIn}/>
           </div>
-          {/* <div className = 'zoom'>
-          </div> */}
         </div>
       )
     }

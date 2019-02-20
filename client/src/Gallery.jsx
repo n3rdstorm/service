@@ -8,25 +8,27 @@ class Gallery extends React.Component {
     this.state = {
       mainImage:this.props.images[0]
     };
+    this.changeImage = this.changeImage.bind(this);
   }
 
-  changeImage(event) {
+  changeImage(imageSrc) {
     event.preventDefault();
-    console.log(event.target)
-    this.setState({mainImage: this.props.image})
+    console.log(imageSrc);
+    this.setState({mainImage: imageSrc})
   }
-  
+
+
   render() {
     return (
       <div className ='imageSection'>
         <div className = 'galleryDiv'>
           <ul>
             {this.props.images.map((image, i) => 
-              <GalleryImage image = {image} key = {i} />
+              <GalleryImage image = {image} key = {i} changeImage={this.changeImage} />
               )}
           </ul>
         </div>
-        <MainImage mainImage = {this.props.images[0]} />
+        <MainImage mainImage = {this.state.mainImage} />
       </div>
     )
   }

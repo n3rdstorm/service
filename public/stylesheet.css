@@ -83,7 +83,6 @@
   float: left
 }
 
-/* when clicked, conditionally render zoomIn */
 .zoomInWrapper{
   top: 260.195px;
   left: 30px;
@@ -156,13 +155,10 @@
   width: 300px;
   font-family: 'Mukta', sans-serif;
   color: #393939;
-  /* line-height: 1.4; */
 }
 
 
 #itemName {
-  /* margin: 0; */
-  /* font-size: 2em; */
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
@@ -419,10 +415,6 @@ img#colorIcon {
   margin-bottom: 12px;
 }
 
-/* .wishListDiv {
-  margin-top: 12px;
-} */
-
 #wishListText {
   background-position: bottom;
   background-repeat: no-repeat;
@@ -470,7 +462,6 @@ img#colorIcon {
   background: #000 none!important;
   border-color: #000;
   color: #fff!important;
-  /* font-weight: 350; */
   height: 50px;
   cursor: pointer;
   align-items: center;

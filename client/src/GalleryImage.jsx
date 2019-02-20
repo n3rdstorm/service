@@ -17,7 +17,7 @@ class GalleryImage extends React.Component {
     if (this.state.hover) {
       return (
         <li className="gallery-li-hover">
-          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} />
+          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} onClick={(event) => {this.props.changeImage(event.target.src)}} />
         </li>
       )
     } else {
