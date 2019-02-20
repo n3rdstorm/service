@@ -22,7 +22,7 @@ class MainImage extends React.Component {
   render() {
     if (this.state.zoom) {
       return (
-        <div className = 'zoomInWrapper'>
+        <div className = 'zoomInWrapper' onClick={this.zoomIn}>
           <img src={this.state.currentImage} className ='zoomMainImage'/>
           <div className ='exit'>
             <svg focusable="false" height="24" width="24" class='exitIconPosition'>
