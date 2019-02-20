@@ -11,7 +11,6 @@ class MainImage extends React.Component {
       currentImage: props.mainImage,
       zoom: false
     };
-    // this.handleClick=this.handleClick.bind(this);
     this.zoomIn = this.zoomIn.bind(this);
   }
 
@@ -19,13 +18,6 @@ class MainImage extends React.Component {
     console.log('zoom');
     this.setState({zoom: !this.state.zoom})
   }
-
-  // handleClick(event) {
-  //   event.preventDefault();
-  //   console.log(event.target.value)
-  //   this.setState({currentImage: event.target.value})
-  // }
-
 
   render() {
     if (this.state.zoom) {

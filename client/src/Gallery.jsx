@@ -5,9 +5,17 @@ import MainImage from './MainImage.jsx';
 class Gallery extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      mainImage:this.props.images[0]
+    };
   }
 
+  changeImage(event) {
+    event.preventDefault();
+    console.log(event.target)
+    this.setState({mainImage: this.props.image})
+  }
+  
   render() {
     return (
       <div className ='imageSection'>

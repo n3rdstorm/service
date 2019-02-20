@@ -5,7 +5,7 @@ const Sizes = (props) => {
   if (props.open) {
     return (
       <div className = 'sizesOpen'>
-        <div className = 'sizesOpenHeaderWrapper'>
+        <div className = 'sizesOpenHeaderWrapper' onClick={() => {props.close()}}>
           <span className = 'sizesOpenHeaderTitle'>Choose a size</span>
           <span className = 'sizeTextWhenOpen'>True to size. Considered a Slim fit; fitted through the chest, armholes and sides.</span>
         </div>
@@ -19,7 +19,7 @@ const Sizes = (props) => {
   } else {
     return (
       <div className = 'sizesClosed'>
-        <div className = 'sizesOpenHeaderWrapper' onClick={(e) => {props.close(e)}}>
+        <div className = 'sizesOpenHeaderWrapper's>
           <span className = 'sizesOpenHeaderTitle'>Choose a size</span>
           <span className = 'sizeTextWhenOpen'>True to size. Considered a Slim fit; fitted through the chest, armholes and sides.</span>
         </div>
