@@ -2,15 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import Gallery from './src/Gallery.jsx';
-import Description from './src/Description.jsx';
-import Fit from './src/Fit.jsx';
-import Sizes from './src/Sizes.jsx';
-import Colors from './src/Colors.jsx';
-import AddToBag from './src/AddToBag.jsx';
 import RightSideComponent from './src/RightSideComponent.jsx';
 
 
-class App extends React.Component {
+class Product extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,4 +49,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Product />, document.getElementById('app'));
