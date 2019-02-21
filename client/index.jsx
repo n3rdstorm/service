@@ -49,4 +49,4 @@ class Product extends React.Component {
   }
 }
 
-ReactDOM.render(<Product />, document.getElementById('app'));
+ReactDOM.render(<Product />, document.getElementById('product'));
