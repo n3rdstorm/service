@@ -13,7 +13,6 @@ class Gallery extends React.Component {
 
   changeImage(imageSrc) {
     event.preventDefault();
-    console.log(imageSrc);
     this.setState({mainImage: imageSrc})
   }
 

@@ -49,4 +49,5 @@ class Product extends React.Component {
   }
 }
 
-ReactDOM.render(<Product />, document.getElementById('product'));
+// ReactDOM.render(<Product />, document.getElementById('product'));
+window.Product = Product;
