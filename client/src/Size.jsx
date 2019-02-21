@@ -10,7 +10,6 @@ class Size extends React.Component {
   }
   hoverSize() {
     this.setState({sizeHover: !this.state.sizeHover})
-    console.log('hey')
   }
 
   render() {
