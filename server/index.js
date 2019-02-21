@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../public')));
+
 app.get('/products/:product_id', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, '../public/index.html'));
 });
