@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const mongoConnection = require('../config.js');
 // mongoose.connect('mongodb://127.0.0.1:27017/products');
-mongoose.connect('mongodb+srv://shelly:shelly@cluster0-6ycdz.mongodb.net/n3rdstorm?retryWrites=true', err => {
+mongoose.connect(mongoConnection, err => {
   if (err) {
     console.log(err);
   }
