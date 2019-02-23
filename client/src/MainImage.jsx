@@ -23,10 +23,10 @@ class MainImage extends React.Component {
         <div className = 'zoomInWrapper' onClick={this.zoomIn}>
           <img src={this.props.mainImage} className ='zoomMainImage'/>
           <div className ='exit'>
-            <svg focusable="false" height="24" width="24" class='exitIconPosition'>
+            <svg focusable="false" height="24" width="24" className='exitIconPosition'>
               <g>
-                <circle class='circle' cx="12" cy="12" r="11"></circle>
-              <path class='x' style={xMark}></path>
+                <circle className='circle' cx="12" cy="12" r="11"></circle>
+              <path className='x' style={xMark}></path>
               </g>
             </svg>
           </div>

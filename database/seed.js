@@ -10,8 +10,10 @@ let product1 = new Product ({
   'description': 'Wild style is refined for the contemporary gent on an intricate jacquard-knit wool-blend sweater featuring a bold, fierce tiger face in front.',
   'fit': 'True to size.',
   'size': ['Small', 'Medium', 'Large', 'X-Large','XX-Large'],
-  'color': ['Black Gold'],
-  'images': ['https://n.nordstrommedia.com/id/9d02dff4-567e-4b1f-b334-f4dc6c3eed2d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/2ba85b44-1644-48fe-ba86-5744fa25bc06.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/20ec64e1-e350-4d73-9294-ae19cd0ffb09.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65'],
+  'color': [{color: 'Black Gold', icon: 'https://s3.amazonaws.com/n3rdstorm-service/sweater+-+color.jpeg'}],
+  'images': ['https://s3.amazonaws.com/n3rdstorm-service/sweater+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/sweater+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/sweater+-+full.jpeg'],
   'quantity': Math.floor(Math.random() * 11)
 })
 
@@ -22,8 +24,18 @@ let product2 = new Product ({
   'price': 98.00,
   'description': 'A slick finish adds extra edge to stretchy faux-leather leggings flattered by a subtle control top.',
   'size': ['Small', 'Medium', 'Large', 'X-Large'],
-  'color': ['Black'],
-  'images': ['https://n.nordstrommedia.com/id/fb07e902-092e-47eb-9e99-b97492f53b90.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/bd27c916-7b8e-4147-810f-7cbc77189830.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/e8c86ca8-ebbe-4d16-b1c0-8376c0efb6e3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/91227006-43eb-472a-8216-41b01c2c2abb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/aa8641aa-8604-46d2-b5a4-054b688262fa.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65','https://n.nordstrommedia.com/id/226647e4-a150-490b-8758-eae18e463108.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/71537d2e-65a9-415c-bb4e-36186376b37a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/b9ba634f-4dbb-483c-a036-9917ac239d6e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/7dd078c2-d844-4f39-99f9-8b1f49fc1de0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/e036931a-a3d7-4342-b2cf-ea0ec415c0b2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65'],
+  'color': [{color: 'Black', icon: 'https://s3.amazonaws.com/n3rdstorm-service/pants+-+color.jpeg'}],
+  'images': ['https://s3.amazonaws.com/n3rdstorm-service/pants+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+fabric.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+full+body.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+full.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+random.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+side+1.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+side.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+top.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants+-+video.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/pants-+back.jpeg'],
   'quantity': Math.floor(Math.random() * 11)
 })
 
@@ -35,8 +47,13 @@ let product3 = new Product ({
   'description': 'Striking, graffiti-inspired patterning adds to the edgy, avant-garde aesthetic of a dramatic thigh-high boot finished with the unmistakable lipstick-red sole.',
   'fit': 'Runs small; order next size up.',
   'size': ['6US/36EU', '7US/37EU', '8.5US/38.5EU'],
-  'color': ['Black/White'],
-  'images': ['https://n.nordstrommedia.com/id/fde873eb-85ac-447f-b57a-52267a578e76.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/ee2d1663-e17a-444c-86ac-dd289f6d5917.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/7c5f52d9-5ff4-4a0c-be71-15c0a86c746b.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/e608a712-34e2-45a5-a68f-4b523e99648d.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/334b69cf-0ce1-409e-8ff8-61730ccd02bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/944acee4-8396-458d-b453-d572fd4970a9.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=1.5&quality=65'],
+  'color': [{color: 'Black/White', icon: 'https://s3.amazonaws.com/n3rdstorm-service/boots+-+color.jpeg'}],
+  'images': ['https://s3.amazonaws.com/n3rdstorm-service/boots+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/boots+-+bottom.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/boots+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/boots+-+side+1.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/boots+-+side.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/boots+-+toe.jpeg'],
   'quantity': Math.floor(Math.random() * 11)
 })
 
@@ -47,8 +64,11 @@ let product4 = new Product ({
   'price': 20000.00,
   'description': 'One hundred-fifteen sparkling pavé diamonds illuminate the sculptural Caviar metalwork of an elegant bracelet that makes a refined statement when worn solo.',
   'size': ['Medium'],
-  'color': ['Silver/ Diamond'],
-  'images': ['https://n.nordstrommedia.com/id/1ef00efd-b9af-4703-b65c-b3aa9151035f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/152695d7-e54a-4155-a6f7-aef993b49e8a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/78d91720-d8bd-46bf-91ac-16077b7c93c0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/8d31f786-5d09-4780-a2ff-6f0cd70de538.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65'],
+  'color': [{color: 'Silver/ Diamond', icon: 'https://s3.amazonaws.com/n3rdstorm-service/bracelet+-+color.jpeg'}],
+  'images': ['https://s3.amazonaws.com/n3rdstorm-service/bracelet+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/bracelet+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/bracelet+-+side+1.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/bracelet+-+side.jpeg'],
   'quantity': Math.floor(Math.random() * 11)
 })
 
@@ -59,8 +79,16 @@ let product5 = new Product ({
   'price': 180.00,
   'description': 'Faux-fur is the season\'s best trend—wear it well in this plush longline coat that\'s irresistibly chic.',
   'size': ['2 US(fits like 0)', '4 US (fits like 0-2)', '6 US(fits like 2-4)', '8 US(fits like 6-8)', '12 US(fits like 14)', '14 US(fits like 16-18)'],
-  'color': ['Rust', 'Teal'],
-  'images': ['https://n.nordstrommedia.com/id/fc1e7ed9-a9b4-41d1-90cf-68ccdc289cd3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/83b5f2b4-e71e-4ed8-8442-317314de8088.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/a1d2d9dc-073b-4b8a-81b3-f0e137688289.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65', 'https://n.nordstrommedia.com/id/2a84f078-c9ba-4fdd-8804-d87851eeb9ee.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=1.5&quality=65'],
+  'color': [{color:'Rust', icon: 'https://s3.amazonaws.com/n3rdstorm-service/coat+-+color+0.jpeg'}, {color: 'Teal', icon: 'https://s3.amazonaws.com/n3rdstorm-service/coat+-+color+1.jpeg'}],
+  'images': ['https://s3.amazonaws.com/n3rdstorm-service/red+coat+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/red+coat+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/red+coat+-+full.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/red+coat+-+top.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/red+coat+-+video.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/blue+coat+-+back.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/blue+coat+-+front.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/blue+coat+-+side.jpeg',
+  'https://s3.amazonaws.com/n3rdstorm-service/blue+coat+-+top.jpeg'],
   'quantity': Math.floor(Math.random() * 11)
 })
 
