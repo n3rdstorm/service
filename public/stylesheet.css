@@ -170,7 +170,6 @@
 #brand {
   font-size: .9rem;
   font-weight: 350;
-  text-decoration: underline;
 }
 
 #price {
@@ -198,6 +197,9 @@
 .mainFitDiv {
   display: block;
   position: relative;
+  font-weight: 700;
+  font-size: .9rem;
+
 }
 
 .fit {

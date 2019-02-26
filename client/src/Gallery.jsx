@@ -6,13 +6,18 @@ class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainImage:this.props.images[0]
+      mainImage: this.props.images[0]
     };
     this.changeImage = this.changeImage.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      mainImage: nextProps.images[0]
+    })
+  }
+
   changeImage(imageSrc) {
-    event.preventDefault();
     this.setState({mainImage: imageSrc})
   }
 

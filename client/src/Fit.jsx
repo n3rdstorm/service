@@ -18,15 +18,25 @@ class Fit extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isSizesOpen: false
+      isSizesOpen: false,
+      size: 'Size'
     };
     this.handleSize = this.handleSize.bind(this);
+    this.changeSize = this.changeSize.bind(this);
   }
 
   handleSize() {
     this.setState({
       isSizesOpen: !this.state.isSizesOpen
     });
+  }
+
+
+  changeSize(size) {
+    this.setState({
+    size: size,
+    isSizesOpen: !this.state.isSizesOpen
+    })
   }
 
   render() {
@@ -36,9 +46,9 @@ class Fit extends React.Component {
           <span id = 'fitText'>Fit</span>
           <span id = 'fitTip'>{this.props.fit.fit}</span>
         </div>
-        <button id='sizeButton' onClick={this.handleSize}>
+        <button id='sizeButton' onClick={this.handleSize}> {this.state.size}
           <div className = 'sizeValue'>
-            Size
+            {this.state.chosenSize}
             <span id = 'arrowSpan'>
               <svg id='buttonArrow' style={svgButtonArrow} >
                 <path style={pathButtonArrow}></path>
@@ -49,7 +59,7 @@ class Fit extends React.Component {
         <aside className = 'sizeGuide'>
           <span className ='sizeGuideSpan'>Size guides</span>
         </aside>
-        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen} close={this.handleSize}/>
+        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen} close={this.handleSize} changeSize={this.changeSize}/>
       </div>
     )
   }
