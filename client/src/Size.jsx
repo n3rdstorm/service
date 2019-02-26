@@ -4,10 +4,11 @@ class Size extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      sizeHover: false
+      sizeHover: false,
     };
-    this.hoverSize=this.hoverSize.bind(this);
+    this.hoverSize = this.hoverSize.bind(this);
   }
+
   hoverSize() {
     this.setState({sizeHover: !this.state.sizeHover})
   }
@@ -15,7 +16,7 @@ class Size extends React.Component {
   render() {
     if (this.state.sizeHover) {
       return (
-        <div className="eachSizeDiv">
+        <div className="eachSizeDiv" onClick={(e) => this.props.changeSize(e.target.innerHTML)}>
           <li className='eachSize' onMouseLeave={this.hoverSize}>{this.props.size}</li>
           <span className='sizeHover'></span>
         </div>

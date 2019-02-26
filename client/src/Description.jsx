@@ -9,7 +9,7 @@ class Description extends React.Component {
     return (
       <div className='description'>
         <h1 id='itemName'>{this.props.description.itemName}</h1>
-        <h2 id = 'brand'>{this.props.description.brand}</h2>
+        <h2 id = 'brand'>{this.props.description.brand.toUpperCase()}</h2>
         <section>
           <span>
             <span id = 'price'>{this.props.description.price}</span>

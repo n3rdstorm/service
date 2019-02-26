@@ -4,10 +4,12 @@ const read = require('./controllers.js');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../public')));
+
 
 app.get('/products/:product_id', (req, res) => {
   read((error, data) => {

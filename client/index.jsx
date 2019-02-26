@@ -22,7 +22,7 @@ class Product extends React.Component {
   }
  
   componentDidMount() {
-    let id = window.location.pathname.slice(1) || 1;
+    let id = window.location.pathname.slice(1) || 0;
 
     $.ajax({
       type: 'GET',
@@ -34,7 +34,7 @@ class Product extends React.Component {
           images: data.images,
           itemName: data.product_name,
           brand: data.brand,
-          price: data.price,
+          price: '$' + data.price.toFixed(2),
           description: data.description,
           fit: data.fit,
           size: data.size,
