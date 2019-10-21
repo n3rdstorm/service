@@ -20,13 +20,13 @@ class MainImage extends React.Component {
   render() {
     if (this.state.zoom) {
       return (
-        <div className = 'zoomInWrapper' onClick={this.zoomIn}>
-          <img src={this.props.mainImage} className ='zoomMainImage'/>
-          <div className ='exit'>
-            <svg focusable="false" height="24" width="24" className='exitIconPosition'>
+        <div className='image-zoom-container' onClick={this.zoomIn}>
+          <img src={this.props.mainImage} className='zoom-image'/>
+          <div className='exit'>
+            <svg focusable="false" height="24" width="24" className='exit-icon'>
               <g>
                 <circle className='circle' cx="12" cy="12" r="11"></circle>
-              <path className='x' style={xMark}></path>
+                <path className='x' style={xMark}></path>
               </g>
             </svg>
           </div>
@@ -35,8 +35,8 @@ class MainImage extends React.Component {
     } else {
       return (
         <div>
-          <div className='mainImageContainer'>
-              <img src={this.props.mainImage} id='mainImage' onClick={this.zoomIn}/>
+          <div className='main-image-container'>
+            <img src={this.props.mainImage} className='main-image' onClick={this.zoomIn}/>
           </div>
         </div>
       )

@@ -21,18 +21,17 @@ class Gallery extends React.Component {
     this.setState({mainImage: imageSrc})
   }
 
-
   render() {
     return (
-      <div className ='imageSection'>
-        <div className = 'galleryDiv'>
+      <div className='image-container'>
+        <div className='gallery-container'>
           <ul>
             {this.props.images.map((image, i) => 
-              <GalleryImage image = {image} key = {i} changeImage={this.changeImage} />
-              )}
+              <GalleryImage image={image} key={i} changeImage={this.changeImage} />
+            )}
           </ul>
         </div>
-        <MainImage mainImage = {this.state.mainImage} />
+        <MainImage mainImage={this.state.mainImage} />
       </div>
     )
   }
