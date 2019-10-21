@@ -17,13 +17,13 @@ class GalleryImage extends React.Component {
     if (this.state.hover) {
       return (
         <li className="gallery-li-hover">
-          <img src={this.props.image} className="galleryImageSize" onMouseLeave={this.hoverImage} onClick={(event) => {this.props.changeImage(event.target.src)}} />
+          <img src={this.props.image} className="gallery-image-size" onMouseLeave={this.hoverImage} onClick={(event) => {this.props.changeImage(event.target.src)}} />
         </li>
       )
     } else {
       return (
         <li className="gallery-li">
-          <img src={this.props.image} className="galleryImageSize" onMouseEnter={this.hoverImage} />
+          <img src={this.props.image} className="gallery-image-size" onMouseEnter={this.hoverImage} />
         </li>
       )
     }

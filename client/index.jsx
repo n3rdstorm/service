@@ -4,32 +4,28 @@ import $ from 'jquery';
 import Gallery from './src/Gallery.jsx';
 import RightSideComponent from './src/RightSideComponent.jsx';
 
-
 class Product extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: ['https://s3.amazonaws.com/n3rdstorm-service/sweater+-+front.jpeg','https://s3.amazonaws.com/n3rdstorm-service/sweater+-+back.jpeg', 'https://s3.amazonaws.com/n3rdstorm-service/sweater+-+full.jpeg'],
+      images: ['https://n3rdstorm-photos.s3-us-west-2.amazonaws.com/tiger-front.jpeg','https://n3rdstorm-photos.s3-us-west-2.amazonaws.com/tiger-back.jpeg','https://n3rdstorm-photos.s3-us-west-2.amazonaws.com/tiger-full.jpeg'],
       itemName: 'Tiger Wool Blend Sweater',
       brand: 'GUCCI',
       price: '$1500.00',
       description: 'Wild style is refined for the contemporary gent on an intricate jacquard-knit wool-blend sweater featuring a bold, fierce tiger face in front.',
       fit: 'True to size.',
       size: ['Small', 'Medium', 'Large', 'X-Large','XX-Large'],
-      color: [{color: 'Black Gold', icon: 'https://s3.amazonaws.com/n3rdstorm-service/sweater+-+color.jpeg'}],
+      color: [{color: 'Black Gold', icon: 'https://n3rdstorm-photos.s3-us-west-2.amazonaws.com/tiger-swatch.jpeg'}],
       quantity: 1
     };
   }
  
   componentDidMount() {
     let id = window.location.pathname.slice(1) || 0;
-
     $.ajax({
       type: 'GET',
       url:`/products/${id}`,
-      // dataType: 'json',
       success: (data) => {
-      
         this.setState({
           images: data.images,
           itemName: data.product_name,
@@ -45,14 +41,14 @@ class Product extends React.Component {
       error: (error) => {
         console.log('Error getting data', error);
       }
-    })
+    });
   }
  
   render() {
     return (
-      <div className='topSection'>
-        <Gallery images = {this.state.images} />
-        <RightSideComponent data = {this.state}/> 
+      <div className='container'>
+        <Gallery images={this.state.images} />
+        <RightSideComponent data={this.state} /> 
       </div>
     )
   }

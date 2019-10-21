@@ -16,16 +16,16 @@ class Size extends React.Component {
   render() {
     if (this.state.sizeHover) {
       return (
-        <div className="eachSizeDiv" onClick={(e) => this.props.changeSize(e.target.innerHTML)}>
-          <li className='eachSize' onMouseLeave={this.hoverSize}>{this.props.size}</li>
-          <span className='sizeHover'></span>
+        <div className="size-modal-container" onClick={(e) => this.props.changeSize(e.target.innerHTML)}>
+          <li className='size-li' onMouseLeave={this.hoverSize}>{this.props.size}</li>
+          <span className='size-hover'></span>
         </div>
       )
     } else {
       return (
-        <div className="eachSizeDiv">
-          <li className='eachSize' onMouseEnter={this.hoverSize}>{this.props.size}</li>
-          <span className='noSizeHover'></span>
+        <div className="size-modal-container">
+          <li className='size-li' onMouseEnter={this.hoverSize}>{this.props.size}</li>
+          <span className='no-size-hover'></span>
         </div>
       )
     }

@@ -13,7 +13,6 @@ const pathButtonArrow = {
   stroke: '#737373'
 }
 
-
 class Fit extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +30,6 @@ class Fit extends React.Component {
     });
   }
 
-
   changeSize(size) {
     this.setState({
     size: size,
@@ -41,28 +39,29 @@ class Fit extends React.Component {
 
   render() {
     return (
-      <div className = 'mainFitDiv'>
-        <div className = 'fit'>
-          <span id = 'fitText'>Fit</span>
-          <span id = 'fitTip'>{this.props.fit.fit}</span>
+      <div className='fit-size-container'>
+        <div className='fit'>
+          <span className='fit-text'>Fit</span>
+          <span className='fit-tip'>{this.props.fit.fit}True to size.</span>
         </div>
-        <button id='sizeButton' onClick={this.handleSize}> {this.state.size}
-          <div className = 'sizeValue'>
+        <button className='size-button' onClick={this.handleSize}> {this.state.size}
+          <div className='size-value'>
             {this.state.chosenSize}
-            <span id = 'arrowSpan'>
-              <svg id='buttonArrow' style={svgButtonArrow} >
+            <span className='arrow-span'>
+              <svg className='button-arrow' style={svgButtonArrow}>
                 <path style={pathButtonArrow}></path>
               </svg>
             </span>
           </div>
         </button>
-        <aside className = 'sizeGuide'>
-          <span className ='sizeGuideSpan'>Size guides</span>
+        <aside className='size-guide'>
+          <span className='size-guide-span'>Size guides</span>
         </aside>
-        <Sizes sizes = {this.props.fit} open={this.state.isSizesOpen} close={this.handleSize} changeSize={this.changeSize}/>
+        <Sizes sizes={this.props.fit} open={this.state.isSizesOpen} close={this.handleSize} changeSize={this.changeSize} />
       </div>
     )
   }
 }
 
 export default Fit;
+
